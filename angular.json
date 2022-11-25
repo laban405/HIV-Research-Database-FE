@@ -35,7 +35,7 @@
               "webfontloader",
               "zone.js"
             ],
-            "outputPath": "dist/browser",
+            "outputPath": "dist/dspace-angular",
             "index": "src/index.html",
             "main": "src/main.browser.ts",
             "polyfills": "src/polyfills.ts",
@@ -193,7 +193,7 @@
                 "loaders": "prepend"
               }
             },
-            "outputPath": "dist/server",
+            "outputPath": "dist/dspace-angular",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json"
           },
