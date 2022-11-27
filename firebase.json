@@ -3,23 +3,11 @@
     "rules": "database.rules.json"
   },
   "hosting": {
-    "public": "src",
+    "public": "dist/dspace-angular",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ],
-    "headers": [
-      {
-        "source": "/main.browser.js",
-        "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
-      }
     ]
   }
 }
