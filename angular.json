@@ -42,6 +42,7 @@
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
+              "app",
               "src/assets",
               "src/robots.txt"
             ],
@@ -149,6 +150,7 @@
               "vendor": false
             },
             "assets": [
+              "app",
               "src/assets"
             ],
             "styles": [
