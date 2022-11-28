@@ -4,7 +4,6 @@
   },
   "hosting": {
     "public": "dist/dspace-angular",
-    "site": "HIVResearchDatabase",
     "ignore": [
       "firebase.json",
       "**/.*",
