@@ -35,7 +35,7 @@
               "webfontloader",
               "zone.js"
             ],
-            "outputPath": "dist/dspace-angular",
+            "outputPath": "dist/browser",
             "index": "src/index.html",
             "main": "src/main.browser.ts",
             "polyfills": "src/polyfills.ts",
@@ -275,5 +275,9 @@
       }
     }
   },
-  "defaultProject": "dspace-angular"
+  "defaultProject": "dspace-angular",
+  "cli": {
+    "analytics": false,
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
