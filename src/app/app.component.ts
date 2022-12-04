@@ -52,7 +52,7 @@ import { AppConfig, APP_CONFIG } from 'src/config/app-config.interface';
 import { ModalBeforeDismiss } from './shared/interfaces/modal-before-dismiss.interface';
 
 @Component({
-  selector: 'ds-app',
+  selector: 'app',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
