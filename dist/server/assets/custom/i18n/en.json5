@@ -1,0 +1,7 @@
+{
+  // DSpace default: "Research"
+  "menu.section.browse_global": "Browse Database",
+
+  // DSpace default: "DSpace Angular :: "
+  "repository.title.prefix": "DSpace :: ",
+}
