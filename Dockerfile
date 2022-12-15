@@ -16,12 +16,12 @@
 # # if you have a public IP. See https://github.com/DSpace/dspace-angular/issues/1485
 # CMD yarn serve --host 0.0.0.0
 
-FROM node:10
+FROM node:14
 WORKDIR /usr/src/app
 COPY package*.json ./
-RUN npm ci
+RUN npm install --only=production
 # Copy local angular/nest code to the container
-COPY . .
+COPY . ./
 # Build production app
 RUN npm run build:ssr
 CMD ["npm", "run", "serve:ssr"]
