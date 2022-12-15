@@ -19,9 +19,11 @@
 FROM node:14
 WORKDIR /usr/src/app
 COPY package*.json ./
+RUN npm install -g @angular/cli
 RUN npm install --only=production
+RUN npm i -D @angular-builders/custom-webpack
 # Copy local angular/nest code to the container
-COPY . ./
+COPY . .
 # Build production app
 RUN npm run build:ssr
 CMD ["npm", "run", "serve:ssr"]
