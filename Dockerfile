@@ -26,4 +26,5 @@ RUN npm i -D @angular-builders/custom-webpack
 COPY . .
 # Build production app
 RUN npm run build:ssr
+EXPOSE 4000
 CMD ["npm", "run", "serve:ssr"]
