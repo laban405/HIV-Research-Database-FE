@@ -275,7 +275,7 @@ function run() {
 
   // Start up the Node server
   const server = app();
-  server.listen(port, host, () => {
+  server.listen(port, '0.0.0.0', () => {
     serverStarted();
   });
 }
