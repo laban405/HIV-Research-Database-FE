@@ -270,12 +270,12 @@ function createHttpsServer(keys) {
 }
 
 function run() {
-  const port =  4000;
-  const host = '/';
+  const port = environment.ui.port || 8080;
+  const host = environment.ui.host || '/';
 
   // Start up the Node server
   const server = app();
-  server.listen(port, '0.0.0.0', () => {
+  server.listen(port, host, () => {
     serverStarted();
   });
 }
