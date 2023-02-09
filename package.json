@@ -16,7 +16,7 @@
     "build": "ng build --configuration development",
     "build:stats": "ng build --stats-json",
     "build:prod": "yarn run build:ssr",
-    "build:ssr": "npx ng build --configuration production && npx ng run dspace-angular:server:production",
+    "build:ssr": "yarn global add @angular/cli && npx ng build --configuration production && npx ng run dspace-angular:server:production",
     "test": "ng test --sourceMap=true --watch=false --configuration test",
     "test:watch": "nodemon --exec \"ng test --sourceMap=true --watch=true --configuration test\"",
     "test:headless": "ng test --sourceMap=true --watch=false --configuration test --browsers=ChromeHeadless --code-coverage",
